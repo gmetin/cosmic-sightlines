@@ -1,0 +1,11 @@
+"""
+open 1024**3 float cube and return np.array
+"""
+
+import numpy as np
+
+def read(path): 
+    nc = 1024
+    file = np.fromfile(path, dtype=np.single).reshape(nc,nc,nc)
+    return (file)
+
