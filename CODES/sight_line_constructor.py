@@ -2,18 +2,18 @@ from scipy import ndimage
 import numpy as np
 
 class Sightline:
-    def __init__(self,start,end,num = 1000):
 
+    def __init__(self,start,end,num = 1000): #start & end are  3x1 arrays (x,y,z) each
         self.start = start
         self.end = end
-        self.r = []
-        self.delta = []
         self.num = num
+        self.r = np.linalg.norm(self.end - self.start)
 
-
-    def calc_los(self,start, end, num, delta):
-        XYZ = np.linspace(self.start, self.end, self.num)
-        los_delta = ndimage.map_coordinates(delta, XYZ, order=0, mode='nearest')
+    def calc_los(self, res, delta):
+        start = (self.start/res).astype(np.int32)
+        end =  (self.end/res).astype(np.int32)
+        XYZ = np.linspace(start, end, self.num)
+        los_delta = ndimage.map_coordinates(delta, XYZ.T, order=0, mode='nearest')
         return los_delta
     
 
