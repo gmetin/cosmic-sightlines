@@ -9,3 +9,9 @@ def read(path):
     file = np.fromfile(path, dtype=np.single).reshape(nc,nc,nc)
     return (file)
 
+
+def read_many(simlist):
+    a = np.genfromtxt(simlist,dtype='str')
+    files = a[:,0]
+    redshifts = a[:,1].astype(np.single)
+    return (files,redshifts)
