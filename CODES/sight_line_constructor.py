@@ -23,8 +23,6 @@ class Sightline:
     def save_sightline(self,name):
         tp = np.dtype([('distance', np.single), ('density', np.single)])
         arr = np.zeros(self.los.size,dtype=tp)
-        start = ((self.start-self.origin) /self.res)
-        end =   ((self.end -self.origin)/self.res)
         dist = np.linspace(0, self.r, len(self.los))
         arr["distance"]=dist
         arr["density"]=self.los
