@@ -23,13 +23,13 @@ class Sightline:
         else:
             los_delta = ndimage.map_coordinates(delta, XYZ.T, order=0, mode='constant',cval=-10.0)
         self.los = los_delta
+        self.dist = np.linspace(0, self.r, len(self.los))
         return los_delta
     
     def save_sightline(self,name):
         tp = np.dtype([('distance', np.single), ('density', np.single)])
         arr = np.zeros(self.los.size,dtype=tp)
-        dist = np.linspace(0, self.r, len(self.los))
-        arr["distance"]=dist
+        arr["distance"]=self.dist
         arr["density"]=self.los
         np.save("sightline_"+str(name),arr)
          
