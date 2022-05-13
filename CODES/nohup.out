@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "delta2phi.py", line 62, in <module>
+    res_los[i].tofile("phi_"+str(files[i]['filename'])).astpye(np.single)
+AttributeError: 'NoneType' object has no attribute 'astpye'
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: divide by zero encountered in true_divide
+  delta_kk2 = delta_k /k2
+delta2phi.py:51: RuntimeWarning: invalid value encountered in true_divide
+  delta_kk2 = delta_k /k2
